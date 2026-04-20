@@ -21,12 +21,12 @@ DEFAULT_SYMBOLS = [
 ]
 
 # ─── Timeframe ───────────────────────────────────────────────────────────────
-DEFAULT_TIMEFRAME = "1h"
+DEFAULT_TIMEFRAME = "5m"
 CANDLE_LIMIT      = 200
 
 # ─── Signal Engine ───────────────────────────────────────────────────────────
 CONFIDENCE_THRESHOLD  = 70
-AUTO_INTERVAL_SECONDS = 3600
+AUTO_INTERVAL_SECONDS = 300
 
 # ─── Strategy Weights (must sum to 1.0) ─────────────────────────────────────
 STRATEGY_WEIGHTS = {
