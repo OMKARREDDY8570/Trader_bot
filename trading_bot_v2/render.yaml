@@ -1,0 +1,16 @@
+services:
+  - type: worker
+    name: trading-signal-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r trading_bot/requirements.txt
+    startCommand: cd trading_bot && python main.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+    disk:
+      name: bot-data
+      mountPath: /opt/render/project/src/trading_bot/logs
+      sizeGB: 1
