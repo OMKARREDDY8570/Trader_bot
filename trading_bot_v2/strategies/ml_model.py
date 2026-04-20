@@ -77,7 +77,7 @@ def train_model(df):
 
     scaler   = StandardScaler()
     X_scaled = scaler.fit_transform(X)
-    model    = LogisticRegression(max_iter=1000, multi_class="ovr")
+    model = LogisticRegression(max_iter=1000)
     model.fit(X_scaled, y)
 
     os.makedirs("logs", exist_ok=True)
