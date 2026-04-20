@@ -1,7 +1,7 @@
-python-telegram-bot[job-queue]==21.3
-ccxt==4.3.31
-pandas==2.1.4
-numpy==1.26.4
-scikit-learn==1.5.0
-python-dotenv==1.0.1
-requests==2.32.3
+python-telegram-bot[job-queue]>=21.3
+ccxt>=4.3.31
+pandas>=2.2.2
+numpy>=1.26.4
+scikit-learn>=1.5.0
+python-dotenv>=1.0.1
+requests>=2.32.3
